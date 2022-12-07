@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+	<!----hero Section start---->
+
+	<div class="hero" id="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="#hero">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#service">Community Involvement</a></li>
+				<li><a href="#arts">Art & Display</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h2><span>Hello, my name is</span></h2>
+			<h1>Lily <span>Wang</span></h1>
+			<h3>I'm a Software Engineer.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about" id="about">
+		<div class="main">
+			<img src="img/main-img.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>IT Professional <span>& Community Advocate</span></h5>
+				<p>I graduated from University of Toronto in 2017. I am passionate about technology and currently work
+					as a developer. In my spare time, I'm expanding my knowledge in arts, design, and sustainability.
+				</p>
+				<button type="submit" onclick="window.open('img/main-img.jpg')">Resume</button>
+
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+
+	<div class="service" id="service">
+		<div class="main2">
+			<div class="float-container">
+				<div class="float-child">
+					<div class="about-text">
+						<h2><span>Community Involvement</span></h2>
+						<p>
+							I am a past participant of the CCC program.
+							I was involved in hands-on
+							conservation and environmental field learning. I am interested in collaborating with peers
+							across the country to develop
+							outreach and
+							service
+							projects that can be delivered in 2023. I am looking forward to build a series of workshops
+							to educate
+							youth
+							leaders, schools, and community members.
+							Stay in tune for my community projects:
+							<a href="https://www.eventbrite.ca/e/rock-painting-for-beginners-tickets-363311232677">
+								Rock Painting
+							</a>,
+							<a href="https://www.eventbrite.ca/e/rock-painting-for-beginners-tickets-363311232677">
+								River Cleanup
+							</a>,
+							<a href="https://www.eventbrite.ca/e/rock-painting-for-beginners-tickets-363311232677">
+								Intro to Foraging
+							</a>, and
+							<a href="https://www.eventbrite.ca/e/rock-painting-for-beginners-tickets-363311232677">
+								Hiking
+							</a>.
+						</p>
+					</div>
+				</div>
+				<!--end float child-->
+
+
+
+
+
+
+
+				<div class="float-child">
+					<div class="slider">
+						<div class="slide_viewer">
+							<div class="slide_group">
+								<div class="slide">
+									<img src="img/abbey.jpg" alt="slider1">
+								</div>
+								<div class="slide">
+									<img src="img/ulink.jpg" alt="slider2">
+								</div>
+								<div class="slide">
+									<img src="img/farm.png" alt="slider3">
+								</div>
+								<div class="slide">
+									<img src="img/ulink2.png" alt="slider4">
+								</div>
+								<div class="slide">
+									<img src="img/farm2.png" alt="slider3">
+								</div>
+							</div>
+						</div>
+					</div><!-- End // .slider -->
+
+					<!--   
+		  <div class="slide_buttons">
+		  </div>
+		  
+		  <div class="directional_nav">
+			<div class="previous_btn" title="Previous">
+			  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+				<g>
+				  <g>
+					<path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+					  c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+					<path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+				  </g>
+				</g>
+			  </svg>
+			</div>
+			<div class="next_btn" title="Next">
+			  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+				<g>
+				  <g>
+					<path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+					<path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+				  </g>
+				</g>
+			  </svg>
+			</div>
+		  </div>End // .directional_nav -->
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+					<script>
+
+						$('.slider').each(function () {
+							var $this = $(this);
+							var $group = $this.find('.slide_group');
+							var $slides = $this.find('.slide');
+							var bulletArray = [];
+							var currentIndex = 0;
+							var timeout;
+
+							function move(newIndex) {
+								var animateLeft, slideLeft;
+
+								advance();
+
+								if ($group.is(':animated') || currentIndex === newIndex) {
+									return;
+								}
+
+								bulletArray[currentIndex].removeClass('active');
+								bulletArray[newIndex].addClass('active');
+
+								if (newIndex > currentIndex) {
+									slideLeft = '100%';
+									animateLeft = '-100%';
+								} else {
+									slideLeft = '-100%';
+									animateLeft = '100%';
+								}
+
+								$slides.eq(newIndex).css({
+									display: 'block',
+									left: slideLeft
+								});
+								$group.animate({
+									left: animateLeft
+								}, function () {
+									$slides.eq(currentIndex).css({
+										display: 'none'
+									});
+									$slides.eq(newIndex).css({
+										left: 0
+									});
+									$group.css({
+										left: 0
+									});
+									currentIndex = newIndex;
+								});
+							}
+
+							function advance() {
+								clearTimeout(timeout);
+								timeout = setTimeout(function () {
+									if (currentIndex < ($slides.length - 1)) {
+										move(currentIndex + 1);
+									} else {
+										move(0);
+									}
+								}, 5000);
+							}
+
+							$('.next_btn').on('click', function () {
+								if (currentIndex < ($slides.length - 1)) {
+									move(currentIndex + 1);
+								} else {
+									move(0);
+								}
+							});
+
+							$('.previous_btn').on('click', function () {
+								if (currentIndex !== 0) {
+									move(currentIndex - 1);
+								} else {
+									move(3);
+								}
+							});
+
+							$.each($slides, function (index) {
+								var $button = $('<a class="slide_btn">&bull;</a>');
+
+								if (index === currentIndex) {
+									$button.addClass('active');
+								}
+								$button.on('click', function () {
+									move(index);
+								}).appendTo('.slide_buttons');
+								bulletArray.push($button);
+							});
+
+							advance();
+						});
+					</script>
+				</div> <!-- end float child-->
+			</div><!-- end float container-->
+		</div> <!-- end main -->
+
+
+
+
+
+
+
+
+
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-tree"></i>
+				<h5>Abbey Gardens</h5>
+				<div class="pra">
+					<p>Created educational displays, maintained hiking trails, gardens, and volunteered at local
+						festivals.</p>
+					<!-- <p style="text-align: center;">
+						<a class="button" href="https://abbeygardens.ca/">Learn More</a>
+					</p> -->
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-cat"></i>
+				<h5>Walkabout Farms</h5>
+				<div class="pra">
+					<p>Assisted disabled youth in therapeutic riding initiatives.</p>
+					<!-- <p style="text-align: center;">
+						<a class="button" href="https://walkaboutfarmtra.com/">Website</a>
+					</p> -->
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-water"></i>
+				<h5>ULinks</h5>
+				<div class="pra">
+					<p>Involved in bio monitoring of local fresh water lakes. Participated in water quality sampling,
+						species identification, data collection and analysis. </p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-tractor"></i>
+				<h5>Haliburton Forest</h5>
+				<div class="pra">
+					<p>Built decks and signage using drills. Opened new trail for sightseeing.</p>
+				</div>
+			</div>
+		</div>
+		<!--end box-->
+	</div>
+	<!--end service-->
+
+
+
+	<section class="about" id="arts">
+		<div>
+			<h1>Arts and Photo Display 2020-2023</h1>
+		</div>
+
+
+
+
+		<!-- Photo Grid -->
+		<div class="row">
+
+			<div class="column">
+				<img src="img/rock1.jpg" style="width:100%">
+				<img src="img/rock2.jpg" style="width:100%">
+				<img src="img/rock3.jpg" style="width:100%">
+				<img src="img/rock4.jpg" style="width:100%">
+				<img src="img/rock5.jpg" style="width:100%">
+				<img src="img/rock6.jpg" style="width:100%">
+				<img src="img/rock7.jpg" style="width:100%">
+				<img src="img/rock8.jpg" style="width:100%">
+				<img src="img/rock9.jpg" style="width:100%">
+			</div>
+			<div class="column">
+				<img src="img/workshop1.jpg" style="width:100%">
+				<img src="img/workshop2.jpg" style="width:100%">
+				<img src="img/workshop3.jpg" style="width:100%">
+				<img src="img/workshop4.jpg" style="width:100%">
+				<img src="img/workshop5.jpg" style="width:100%">
+				<img src="img/workshop6.jpg" style="width:100%">
+				<img src="img/workshop7.jpg" style="width:100%">
+
+				<img src="img/pencil1.jpg" style="width:100%">
+				<img src="img/pencil2.jpg" style="width:100%">
+
+				<img src="img/watercolour1.jpg" style="width:100%">
+				<img src="img/watercolour2.jpg" style="width:100%">
+
+				<img src="img/acrylic1.jpg" style="width:100%">
+				<img src="img/acrylic2.jpg" style="width:100%">
+			</div>
+			<div class="column">
+				<img src="img/pastel1.jpg" style="width:100%">
+				<img src="img/pastel2.jpg" style="width:100%">
+				<img src="img/pastel3.jpg" style="width:100%">
+				<img src="img/pastel4.jpg" style="width:100%">
+				<img src="img/pastel5.jpg" style="width:100%">
+				<img src="img/pastel6.jpg" style="width:100%">
+
+
+			</div>
+			<div class="column">
+				<img src="img/photo1.jpg" style="width:100%">
+				<img src="img/photo2.jpg" style="width:100%">
+				<img src="img/photo3.jpg" style="width:100%">
+				<img src="img/photo4.jpg" style="width:100%">
+				<img src="img/photo5.jpg" style="width:100%">
+				<img src="img/photo6.jpg" style="width:100%">
+			</div>
+		</div>
+
+	</section>
+
+
+	<!------Contact Me------>
+	<div class="contact-me" id="contact">
+		<p>Let's stay connected.</p>
+
+		<div class="social">
+			<a href="https://ca.linkedin.com/in/huanning-wang-52169689"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.facebook.com/lily.wang.35380399/"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/huanningw/?hl=en"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+		<p>© Lily Wang 2023</p>
+	</div>
+
+	<!------footer start--------->
+	<!-- <footer>
+		<p>Lily Wang</p>
+		<p>huanning.w@gmail.com</p>
+		<p>+1 (647)567-9518</p>
+		<a class="button-two" href="#">Hire Me</a>
+		<p class="end">all work © Lily Wang 2023 • all rights reserved</p>
+	</footer> -->
+</body>
+
+</html>
