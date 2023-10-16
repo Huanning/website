@@ -106,7 +106,6 @@ h4 {
 	display: inline-block;
 	width: 100%;
 	padding: 14px 130px 14px 15px;
-	border: 2px solid #f9004d;
 	outline: none;
 	border-radius: 30px;
 }
@@ -129,6 +128,11 @@ h4 {
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #191919;
+}
+.projects {
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #101010;
 }
 
 .about img {
@@ -157,7 +161,6 @@ h4 {
 }
 
 .float-container {
-	border: 3px solid #fff;
 	padding: 5px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -168,7 +171,6 @@ h4 {
 	width: 100%;
 	float: left;
 	padding: 20px;
-	border: 2px solid red;
 }
 
 .about-text h2 {
@@ -215,6 +217,12 @@ button:hover {
 	background: #101010;
 	width: 100%;
 	padding: 100px 0px;
+}
+
+.meetups {
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 }
 
 .title h2 {
@@ -284,9 +292,10 @@ h5 {
 }
 
 .contact-me {
+	padding: 9px 22px;
 	width: 100%;
-	height: 290px;
-	background: #191919;
+	height: 390px;
+	background: #101010;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
